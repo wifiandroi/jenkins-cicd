@@ -12,4 +12,14 @@ public class JenkinsController {
     public String carga(){
         return "Hola jenkins";
     }
+
+    @GetMapping("/cargando")
+    public String cargando(){
+        return "Hola jenkins con webhook";
+    }
+
+    @GetMapping("/webhook")
+    public String webhook(){
+        return "Prueba en subir al git  con efectos de webhook";
+    }
 }
