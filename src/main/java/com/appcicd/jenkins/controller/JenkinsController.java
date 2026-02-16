@@ -22,4 +22,14 @@ public class JenkinsController {
     public String webhook(){
         return "Prueba en subir al git  con efectos de webhook";
     }
+
+    @GetMapping("/webhooks")
+    public String webhooks(){
+        return "Prueba en subir al git  con efectos de webhooks";
+    }
+
+    @GetMapping("/uniendocomir")
+    public String uniendocomir(){
+        return "Prueba cambios al git  +  webhooks";
+    }
 }
